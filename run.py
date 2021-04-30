@@ -21,6 +21,11 @@ def contacts():
     return render_template("contacts.html")
 
 
+@app.route("/careers")
+def careers():
+    return render_template("careers")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
